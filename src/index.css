@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+:root{
+  --primary-color: #0D0D2B;
+  --secondary-color: #2B076E;
+  --neutral-grey-3: #828282;
+  --neutral-grey-4: #BDBDBD;
+  --neutral-grey-5: #E0E0E0;
+  --accent-color: #3671E9;
+  --text-color: #FFFFFF;
+  --general-font-size:;
+}
+/* ----------------------------------------FOR ALL DEVICES---------------------------------------- */
+body{
+  background-color: var(--primary-color);
+  font-family: 'Rubik', sans-serif;
+}
+.the-nav{
+  display: none;
+}
+.btn{
+  background-color: var(--accent-color);
+  padding: 10px 20px;
+  color: var(--text-color);
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 32px;
+}
+.btn-flex{
+  display: flex;
+  place-items: center;
+}
+.arrow-img{
+  width: 16px;
+}
+.nav-ul{
+  display: none;
+  flex-direction: column;
+  color: var(--text-color);
+}
+.mobile-img{
+  position: relative;
+  left: 28px;
+  top: 16px;
+}
+h1{
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin: 20px auto;
+  text-align: center;
+}
+header p{
+  color: var(--neutral-grey-5);
+}
+.section-numbers{
+  padding: 2%
+}
+.numbers-flex{
+  display: flex;
+  flex-direction: column;
+  margin: 48px auto 0 auto;
+  width: 65%;
+}
+.react-icons{
+  font-size: 48px;
+  background-color: rgb(255, 255, 255, 0.1);
+  color: var(--accent-color);
+  padding: 12px;
+  border-radius: 50%;
+}
+.item-flex{
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.big-p{
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.small-p{
+  color: var(--neutral-grey-5);
+  font-size: 0.7rem;
+  margin: 8px 0;
+}
+/* ----------------------------------------FOR LARGE DEVICES ONLY---------------------------------------- */
+@media (max-width: 1024px){
+  #App{
+    display: none;
+  }
+  .the-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2%;
+  }
+  .nav-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+ h1{
+  width: 380px;
+  font-size: 2.4rem; 
+  margin: 12px 0 12px 0;
+  text-align: left;
+ }
+ header p{
+  width: 400px;
+}
+.mobile-img{
+  display: none;
+}
+.section-numbers{
+  
+}
+.big-p{
+  font-size: 1.8rem;
+}
+.small-p{
+  font-size: 0.9rem;
+}
+.numbers-flex{
+  flex-direction: row;
+  gap: 24px;
+  justify-content: space-between;
+  width: 85%;
+}
+}
